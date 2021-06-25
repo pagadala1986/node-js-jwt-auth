@@ -73,7 +73,6 @@ isModeratorOrAdmin = (req, res, next) => {
           return;
         }
       }
-
       res.status(403).send({
         message: "Require Moderator or Admin Role!",
       });
